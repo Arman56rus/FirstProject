@@ -1,0 +1,395 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    background-color: #10376e;
+    height: 120px;
+    display: flex;
+}
+footer{
+    background-color: #e1e8f1;
+    height: 166px;
+}
+.header_container_logo{
+    flex: 1;
+    display: flex;
+    margin: 20px 0 19px 199px;
+}
+.header_logo{
+    flex: 1;
+    display: flex;
+    background-color: #1389e6;
+    color: white;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 0 20px ;
+}
+.header_logo_text{
+    flex: 3;
+    color: white;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px 0 0 10px ;
+    position: relative;
+}
+.header_container_list{
+    flex: 1;
+}
+.header_list{
+    padding: 0;
+    list-style: none;
+}
+.header_list .header_list_li {
+    float: left;
+    height: 20px;
+}
+
+.header_list .header_list_li a{
+    color: white;
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 80px;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 24px;
+    position: relative;
+}
+.container{
+    flex: 1;
+    background-color: #edeef0;
+    display: flex;
+}
+.container_left{
+    margin: 60px 40px 93px 180px;
+    background-color: white;
+    flex: 2;
+    border: 1px solid lightgray;
+}
+.container_message{
+    padding: 60px 50px 50px 50px;
+    border-bottom: 1px solid lightgray;
+    overflow-y: scroll;
+}
+.container_message::-webkit-scrollbar {
+    width: 7px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+.container_message::-webkit-scrollbar-thumb {
+    width: 7px;
+    background-color: cyan;
+    border-radius: 10px;
+}
+.photo_author{
+    float: left;
+    margin: 0 10px 0 0 ;
+}
+.name_author{
+    display: flex;
+    margin-bottom: 0;
+    height: 70px;
+}
+.name{
+    font-family: Nunito;
+    font-size: 18px;
+    flex: 1;
+    position: relative;
+    bottom: 22px;
+    margin-bottom: 0;
+}
+.date{
+    color: #818890;
+    flex: 5;
+    text-align: end;
+    align-self: center;
+    position: relative;
+    bottom: 22px;
+    margin-bottom: 0;
+}
+p{
+    margin-top: 10px;
+}
+hr{
+    margin: 25px 0 25px 0;
+
+}
+.container_new_message{
+    background-color: #eaeef4;
+    display: flex;
+    flex-direction: column;
+    /*min-height: 270px;*/
+}
+.add_new_message{
+    margin: 20px 20px 20px 20px;
+    border: none;
+    height: 145px;
+}
+.add_new_message:focus{
+    outline: none;
+}
+.add_new_message::placeholder{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    left: 20px;
+    bottom: 30px;
+}
+.submit_checked_new_message{
+    margin: 0 20px 20px 20px ;
+    display: flex;
+}
+.checked_div{
+    flex: 3;
+}
+.submit_new_message{
+    flex-basis: 40%;
+    background-color: #1389e6;
+    color: white;
+    border: none;
+    height: 60px;
+    font-family: Nunito;
+    font-size: 20px;
+    align-items: center;
+    position: relative;
+    padding: 0 15px 7px 15px;
+}
+.submit_new_message::after{
+    content: "\27A4";
+    position: relative;
+    left: 5px;
+    top: 1px;
+}
+.input_checked_new_message{
+    display: none;
+}
+.fake_checkbox{
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+    background-color: #10376E;
+}
+.fake_checkbox::before{
+    content: "\2714";
+    position: relative;
+    bottom: 1px;
+    left: 3px;
+    font-size: x-small;
+    display: block;
+    color: white;
+    opacity: 0;
+}
+.input_checked_new_message:checked + .fake_checkbox::before{
+    opacity: 1;
+}
+.text_new_checkbox{
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 15px;
+    color: #10376E ;
+    position: relative;
+    top: 1px;
+}
+.container_right{
+    flex: 1;
+    min-height: 100vh;
+    background-color: #1e3351;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.user_photo_name{
+    flex: 2;
+    margin: 0 0 20px 0;
+    justify-items: center;
+    position: relative;
+    text-align: center;
+    top: 170px;
+    right: 50px;
+}
+.user_photo{
+}
+.user_name{
+    margin: 10px 0 0 0;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+}
+.user_data{
+    flex: 0.9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    margin: 20px 180px 0 40px;
+}
+.user_date{
+    background: white;
+    padding: 20px 70px 0 68px;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+}
+.user_date_two{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 12px;
+    position: relative;
+    bottom: 10px;
+}
+.icon_date{
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    padding: 28px 0 0 27px;
+}
+.icon_date_background{
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    padding: 19px 0 0 17px;
+}
+.user_login{
+    background: white;
+    justify-items: start;
+    padding: 20px 130px 0 70px  ;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+}
+.user_login_two{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 12px;
+    position: relative;
+    bottom: 10px;
+}
+.icon_login{
+    position: absolute;
+    left: 1px;
+    padding: 7px 0 0 27px;
+}
+.icon_login_background{
+    position: absolute;
+    left: 1px;
+    padding: 0 0 3px 17px;
+}
+.user_email{
+    background: white;
+    justify-items: start;
+    grid-column: 1/3;
+    padding: 20px 236px 0 70px ;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+}
+.user_email_two{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 12px;
+    position: relative;
+    bottom: 10px;
+}
+.icon_email{
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    padding: 28px 0 0 25px;
+}
+.icon_email_background{
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    padding: 18px 0 0 17px;
+}
+.user_date, .user_login, .user_email{
+    box-shadow: 6px 9px 14px 0px rgba(255, 255, 255, 0.45);}
+
+.setting{
+    flex: 2;
+}
+.setting_button{
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 14px 90px 13px 77px;
+    position: relative;
+    top: 292px;
+    left: 136px;
+}
+.icon_button{
+    position: relative;
+    top: 3px;
+    left: 15px;
+}
+
+.container_footer{
+    display: flex;
+}
+.container_footer_logo{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 10px;
+}
+.container_footer_text{
+    flex: 4;
+    padding-top: 9px;
+}
+.container_footer_submit{
+     display: flex;
+     flex-direction: column;
+     margin-left: 10px;
+     flex: 1;
+ }
+.footer_logo{
+    display: flex;
+    justify-content: center;
+    background-color: #1389e6;
+    color: white;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 18px;
+    width: 50%;
+    margin: 20px 0 58px 100px;
+    padding: 22px 10px 22px 10px;
+}
+.footer_text1 {
+    font-family: Nunito;
+    font-size: 18px;
+    color: #c3c9d2 ;
+    margin-left: 100px;
+}
+.footer_text1::before{
+    content: "\00A9";
+}
+.footer_submit{
+    display: flex;
+    justify-content: center;
+    background-color: #10376e;
+    color: white;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 24px;
+    flex-basis: 70%;
+    margin: 20px 100px 56px 0;
+    padding: 14px 94px 13px 94px;
+}
+.footer_text2{
+    font-family: Nunito;
+    font-size: 18px;
+    color: #c3c9d2 ;
+}
